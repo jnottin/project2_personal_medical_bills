@@ -1,0 +1,57 @@
+STUDY CHECKPOINT 2:
+    -LOOK AT SYNTAX I AM NOT FAMILIR WITH (.populate,)
+
+
+PROBLEMS:
+    -ADDING NEW MEDICAL BILL-- adds blank entries
+    -EDIT MEDICAL BILL - does not show updates/edits
+    -Controllers/medical_bill.create -- collect all req.body instead of individual?
+
+
+
+
+
+
+
+
+
+
+
+FUNCTIONALITY IDEAS:
+
+    PRIMARY:
+        -2 models - medicalbill/cost/number/procedure and doctor/hospital/insurance info
+        -MAKE NEW BILL - require entries for the inputs in new BILL
+        -USER LOGIN NECESSARY
+
+
+
+
+
+    SECONDARY:
+        -
+
+
+
+    TERTIARY:
+        -
+
+
+
+
+LAYOUT IDEAS:
+
+    PRIMARY:
+        -Rows across, procedure/date made/cost 
+
+
+
+
+
+    SECONDARY:
+        -
+
+
+
+    TERTIARY:
+        -

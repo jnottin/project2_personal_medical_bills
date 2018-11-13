@@ -1,0 +1,36 @@
+<h1>YOUR MEDICAL BILLS</h1>
+{{!-- SEE THE FULL DB --}}
+{{!--{{medical_bills}} --}}
+
+<div class="container">
+    <div class="row">
+        <h2 class="col-sm">Procedures</h2>
+        <h2 class="col-sm">Bill Number</h2>
+        <h2 class="col-sm">Insurance</h2>
+        <h2 class="col-sm">Cost</h2>
+    </div>
+
+    {{#each medical_bills}}
+    <div class="row">
+        <div class="col-sm">
+            <h3><a href="medical_bill/{{this.id}}">{{procedure}}</a></h3>
+        </div>
+        <div class="col-sm">
+            <h3>{{billNumber}}</h3>
+        </div>
+        <div class="col-sm">
+            <h3>{{insurance}} </h3>
+        </div>
+        <div class="col-sm">
+            <h3>${{cost}} </h3>
+        </div>
+        <div class="col-sm">
+            <h3><a href="/medical_bill/delete/{{this.id}}">Delete</a></h3>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+
+
+<button><a href="medical_bill/new">Store a new Medical Bill!</a></button>
