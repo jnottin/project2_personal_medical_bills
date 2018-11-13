@@ -1,7 +1,3 @@
-STUDY CHECKPOINT 2:
-    -LOOK AT SYNTAX I AM NOT FAMILIR WITH (.populate,)
-
-
 PROBLEMS:
     -ADDING NEW MEDICAL BILL-- adds blank entries
     -EDIT MEDICAL BILL - does not show updates/edits
@@ -22,20 +18,28 @@ FUNCTIONALITY IDEAS:
     PRIMARY:
         -2 models - medicalbill/cost/number/procedure and doctor/hospital/insurance info
         -MAKE NEW BILL - require entries for the inputs in new BILL
-        -USER LOGIN NECESSARY
+        -paid or not paid property/green if paid, red if not
+        -search bar in procedures
+        -user can organize folders for different procedures, "shots" "surgeries" etc.
+
+        
 
 
 
 
 
     SECONDARY:
-        -
+        -upload picture of bill
+        -USER LOGIN NECESSARY
+        -Carousel of medical bill pictures on show page
+
 
 
 
     TERTIARY:
+        -directions to hospital -- a tag link to google maps
+        -picture of body to have a show of which procedures you have had
         -
-
 
 
 

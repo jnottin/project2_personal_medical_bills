@@ -1,0 +1,52 @@
+PROBLEMS:
+
+
+
+
+
+
+FUNCTIONALITY IDEAS:
+    -rate a trailer app where friends can rate and see which one their friends like most
+
+    PRIMARY:
+        -Model 1: TRAILER - title, director, release date, trailer link on youtube, rating out of 5
+        -Model 2: COMMENTS? - comments shown on show page
+        -Main Page: 
+            -the list of trailers that have been rated best to worst
+            -Nav Bar
+                -User/Logout
+                -
+        -Show page: 
+        
+
+    SECONDARY:
+        -rating system
+        -adding comments 
+
+
+
+
+
+
+    TERTIARY:
+        - Cover page of all trailers being rated
+
+
+
+
+LAYOUT IDEAS:
+
+    PRIMARY:
+        -
+
+
+
+
+
+    SECONDARY:
+        -
+
+
+
+    TERTIARY:
+        -

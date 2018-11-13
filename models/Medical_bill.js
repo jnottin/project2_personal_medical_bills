@@ -5,6 +5,9 @@ const Medical_billSchema = new mongoose.Schema({
     billNumber: String,
     insurance: String,
     cost: Number,
+    // paid: String, // yes or no
+    // date: String,
+
 });
 
 const Medical_bill = mongoose.model("Medical_bill", Medical_billSchema);

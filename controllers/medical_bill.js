@@ -35,5 +35,5 @@ module.exports = {
         Medical_bill.findOneAndRemove({ _id: req.params.id }).then(() => {
             res.redirect("/");
         });
-    }
+    },
 }
