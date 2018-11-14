@@ -1,26 +1,27 @@
-const Medical_bill = require('../models/Medical_bill.js')
+const { Movie, Rating } = require('../models/Movie.js')
 
 module.exports = {
     index: (req, res) => {
-        Medical_bill.find({})
-            .then(medical_bills => {
-                res.render("indexOld", { medical_bills })
+        Movie.find({})
+            .then(movies => {
+                res.render("indexOld", { movies })
             })
     },
     boot: (req, res) => {
-        Medical_bill.find({})
-            .then(medical_bills => {
-                res.render("index", { medical_bills })
+        Movie.find({})
+            .sort({ rating: -1 })
+            .then(movies => {
+                res.render("index", { movies })
             })
     },
     create: (req, res) => {
         //CAN I JUST COLLECT ALL REQ.BODY?
-        Medical_bill.create({
-            procedure: req.body.procedure,
-            billNumber: req.body.billNumber,
-            insurance: req.body.insurance,
-            cost: req.body.cost
-        }).then(medical_bill => {
+        Movie.create({
+            title: req.body.title,
+            director: req.body.director,
+            releaseDate: req.body.releaseDate,
+            rating: req.body.rating
+        }).then(movie => {
             res.redirect('/');
         });
     },

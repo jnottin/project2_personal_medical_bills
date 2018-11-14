@@ -1,4 +1,11 @@
 PROBLEMS:
+    -RATING - where do I put it? in User?
+    -CSS -- in show page, buttons/ tables are not responding to my css
+    
+    
+    
+    
+    -Require inputs for all fields in new movie
 
 
 

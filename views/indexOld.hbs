@@ -1,6 +1,6 @@
 <h1 class="title">YOUR MEDICAL BILLS</h1>
 {{!-- SEE THE FULL DB --}}
-{{!--{{medical_bills}} --}}
+{{!--{{movies}} --}}
 
 <div class="container">
     <div class="row">
@@ -10,22 +10,22 @@
         <h2 class="col-sm">Cost</h2>
     </div>
 
-    {{#each medical_bills}}
+    {{#each movies}}
     <div class="row">
         <div class="col-sm">
-            <h3><a href="medical_bill/{{this.id}}">{{procedure}}</a></h3>
+            <h3><a href="movie/{{this.id}}">{{title}}</a></h3>
         </div>
         <div class="col-sm">
-            <h3>{{billNumber}}</h3>
+            <h3>{{director}}</h3>
         </div>
         <div class="col-sm">
-            <h3>{{insurance}} </h3>
+            <h3>{{releaseDate}} </h3>
         </div>
         <div class="col-sm">
-            <h3>${{cost}} </h3>
+            <h3>${{rating}} </h3>
         </div>
         <div class="col-sm">
-            <h3><a href="/medical_bill/delete/{{this.id}}">Delete</a></h3>
+            <h3><a href="/movie/delete/{{this.id}}">Delete</a></h3>
         </div>
     </div>
     {{/each}}
@@ -33,6 +33,6 @@
 
 
 
-<button><a href="medical_bill/new">Store a new Medical Bill!</a></button>
+<button><a href="movie/new">Store a new Medical Bill!</a></button>
 
 <button><a href="/">BOOOOT</a></button>

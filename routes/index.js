@@ -1,12 +1,12 @@
 const express = require('express')
 const router = express.Router()
 const app = require('./app.js')
-const medical_bill = require('./medical_bill.js')
+const movie = require('./movie.js')
 const user = require('./user.js')
 
 
 router.use('/', app)
-router.use('/medical_bill', medical_bill)
+router.use('/movie', movie)
 router.use('/user', user)
 
 

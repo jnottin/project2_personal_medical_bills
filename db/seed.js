@@ -1,22 +1,25 @@
-const Medical_bill = require("../models/Medical_bill.js");
+const Movie = require("../models/Movie.js");
 
-Medical_bill.find({}).remove(() => {
-    let earInfection = Medical_bill.create({
-        procedure: "Ear infection",
-        billNumber: "HS001",
-        insurance: "Blue Cross",
-        cost: 800,
+Movie.find({}).remove(() => {
+    let earInfection = Movie.create({
+        title: "Creed",
+        director: "Ryan Coogler",
+        releaseDate: "12/03/18",
+        rating: 3,
+        url: "https://www.youtube.com/watch?v=M949G2XzYug"
     })
-    let stitches = Medical_bill.create({
-        procedure: "Stitches",
-        billNumber: "HS001",
-        insurance: "Kaiser",
-        cost: 200,
+    let stitches = Movie.create({
+        title: "Pokemon",
+        director: "Ash Catchem",
+        releaseDate: "12/04/18",
+        rating: 4,
+        url: "https://www.youtube.com/watch?v=nQk7DWW4mz8"
     })
-    let rootCanal = Medical_bill.create({
-        procedure: "Root Canal",
-        billNumber: "HS001",
-        insurance: "Tricare",
-        cost: 2000,
+    let rootCanal = Movie.create({
+        title: "Widows",
+        director: "Steve McQueen",
+        releaseDate: "12/05/18",
+        rating: 5,
+        url: "https://www.youtube.com/watch?v=nN2yBBSRC78"
     })
 })
