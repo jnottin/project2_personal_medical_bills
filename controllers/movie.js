@@ -37,10 +37,16 @@ module.exports = {
         });
     },
     rate: (req, res) => {
-        Movie.findOne({ _id: req.params.id }).then(movie => {
-            movie.rating.push(req.body.rating);
-            console.log(movie.rating)
-            res.redirect(`/movie/${movie._id}`);
+        let content = req.body.rateIt;
+        Movie.findOne({
+            _id: req.params.id
+        }).then(movie => {
+            movie.ratings.push({
+                content
+            });
+            movie.save(err => {
+                res.redirect("/")
+            })
         })
     }
 }

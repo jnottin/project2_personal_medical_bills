@@ -4,12 +4,12 @@ module.exports = {
     index: (req, res) => {
         Movie.find({})
             .then(movies => {
-                res.render("indexOld", { movies })
+                res.render("indexOld", { movies, rating })
             })
     },
     boot: (req, res) => {
         Movie.find({})
-            .sort({ rating: -1 })
+            .sort({ ratings: -1 })
             .then(movies => {
                 res.render("index", { movies })
             })

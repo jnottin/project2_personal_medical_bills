@@ -13,6 +13,7 @@
     <title>Trail To The Best</title>
 </head>
 
+
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
         <div class="container">
@@ -29,7 +30,7 @@
                         <a href="/old" class="nav-link">OLD Home</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="/folders" class="nav-link">Folders</a>
+                        <a href="/folders" class="nav-link">Your Ratings</a>
                     </li>
                     <li class="nav-item px-2">
                         <a href="/user" class="nav-link">User</a>
@@ -90,7 +91,9 @@
         </div>
     </section>
 
-    <!-- MEDICAL BILLS -->
+    {{movies}}
+
+    <!-- MOVIE TRAILERS -->
     <section id="posts">
         <div class="container">
             <div class="row">
@@ -102,7 +105,7 @@
                         <table class="table table-striped">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th>#</th>
+                                    {{!-- <th>#</th> --}}
                                     <th>Title</th>
                                     <th>Director</th>
                                     <th>Release Date</th>
@@ -114,11 +117,17 @@
                             {{#each movies}}
                             <tbody>
                                 <tr>
-                                    <td>1</td>
+                                    {{!-- <td>1</td> --}}
                                     <td>{{title}}</td>
                                     <td>{{director}}</td>
                                     <td>{{releaseDate}}</td>
-                                    <td>{{rating}}</td>
+                                    {{#if ratings.length}}
+                                    {{#each ratings}}
+                                    <td>{{content}}</td>
+                                    {{/each}}
+                                    {{else}}
+                                    <td>Not Rated</td>
+                                    {{/if}}
                                     <td>
                                         <a href="movie/{{this.id}}" class="btn btn-secondary">
                                             <i class="fas fa-angle-double-right"></i> Details

@@ -29,7 +29,7 @@
                         <a href="/old" class="nav-link">OLD Home</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="/folders" class="nav-link">Folders</a>
+                        <a href="/folders" class="nav-link">Your Ratings</a>
                     </li>
                     <li class="nav-item px-2">
                         <a href="/user" class="nav-link">User</a>
@@ -72,14 +72,13 @@
         </div>
     </header>
 
-
     {{!-- MOVIE SECTION --}}
     <section id="users">
         <div class="container container-movie">
             <form class="my-button" action="/movie/{{_id}}?_method=PATCH" method="POST">
                 <h2>Rate the Movie Trailer 0-5: </h2>
                 {{!-- <label for="content"></label> --}}
-                <input type="text" name="rating" id="">
+                <input type="text" name="rateIt" id="">
                 <div>
                     <input type="submit" value="Rate it!">
                 </div>
