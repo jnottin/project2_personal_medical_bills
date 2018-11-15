@@ -13,8 +13,8 @@ app.use(parser.urlencoded({ extended: true }));
 
 app.use('/', routes)
 
-app.listen(3000, () => {
-})
+// app.listen(3000, () => {
+// })
 
 app.set('port', process.env.PORT || 3001)
 
