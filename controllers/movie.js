@@ -44,6 +44,8 @@ module.exports = {
             movie.ratings.push({
                 content
             });
+            // let finalRatingsArray = movie.ratings
+            // let averageRating = this.Movie.avgRatingMethod(finalRatingsArray);
             movie.save(err => {
                 res.redirect("/")
             })
