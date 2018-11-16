@@ -23,7 +23,7 @@ const Movie = new Schema({
 //have a ternary/if statement inside of the model method that will return a singular rating if there is only one
 //and an average if there is more than one
 
-// Movie.methods.avgRatingMethod = function avgRatingMethod(finalRatingsArray) {
+// Movie.methods.avgRatingMethod = function (finalRatingsArray) {
 //     if (finalRatingsArray.length === 1) {
 //         return finalRatingsArray[0]
 //     } else {

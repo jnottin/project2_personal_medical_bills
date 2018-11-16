@@ -25,9 +25,12 @@ module.exports = {
             title: req.body.title,
             director: req.body.director,
             releaseDate: req.body.releaseDate,
-            rating: req.body.rating,
             url: req.body.url
         }).then(movie => {
+            let content = req.body.ratings
+            movie.ratings.push({
+                content
+            });
             res.redirect('/');
         });
     },
@@ -45,7 +48,7 @@ module.exports = {
                 content
             });
             // let finalRatingsArray = movie.ratings
-            // let averageRating = this.Movie.avgRatingMethod(finalRatingsArray);
+            // let averageRating = Movie.avgRatingMethod(finalRatingsArray);
             movie.save(err => {
                 res.redirect("/")
             })

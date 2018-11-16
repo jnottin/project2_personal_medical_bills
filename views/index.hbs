@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h1>
-                        <i class="fas fa-cog"></i>Trail To The Best!</h1>
+                        <i class="fas"></i>Trail To The Best!</h1>
                 </div>
             </div>
         </div>
@@ -40,8 +40,6 @@
         </div>
     </section>
 
-    {{movies}}
-
     <!-- MOVIE TRAILERS -->
     <section id="posts">
         <div class="container">
@@ -59,6 +57,9 @@
                                     <th>Director</th>
                                     <th>Release Date</th>
                                     <th>Rating</th>
+                                    {{!-- {{#each ratings}}
+                                    <th>Rating</th>
+                                    {{/each}} --}}
                                     <th></th>
                                     <th></th>
                                 </tr>
@@ -95,61 +96,6 @@
         </div>
     </section>
 
-    <!-- MODALS -->
-
-
-    <!-- ADD POST MODAL -->
-    {{!-- <div class="modal fade" id="addPostModal">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title">Add Movie</h5>
-                    <button class="close" data-dismiss="modal">
-                        <span>&times;</span>
-                    </button>
-                </div>
-                <form action="/movie" method="POST">
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="title">Title</label>
-                                <input type="text" class="form-control" name="title" id="" value="{{this.title}}">
-                            </div>
-                            <div class="form-group">
-                                <label for="category">Director</label>
-                                <input type="text" class="form-control" name="director" id="" value="{{this.director}}">
-                            </div>
-                            <div class="form-group">
-                                <label for="category">Release Date</label>
-                                <input type="text" class="form-control" name="releaseDate" id="" value="{{this.releaseDate}}">
-                            </div>
-                            <div class="form-group">
-                                <label for="category">Rating</label>
-                                <input type="text" class="form-control" name="rating" id="" value="{{this.rating}}">
-                            </div>
-                            <div class="form-group">
-                                <label for="image">Upload Image</label>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="image">
-                                    <label for="image" class="custom-file-label">Choose File</label>
-                                </div>
-                                <small class="form-text text-muted">Max Size 3mb</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="body">Add Notes</label>
-                                <textarea name="editor1" class="form-control"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <input class="btn btn-primary" type="submit" value="Done Making New Movie!">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> --}}
-
-
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -158,11 +104,6 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
 
-    <script>
-        // Get the current year for the copyright
-        $('#year').text(new Date().getFullYear());
-
-    </script>
 </body>
 
 </html>
