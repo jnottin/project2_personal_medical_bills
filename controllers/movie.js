@@ -48,7 +48,11 @@ module.exports = {
                 content
             });
             // let finalRatingsArray = movie.ratings
-            // let averageRating = Movie.avgRatingMethod(finalRatingsArray);
+            if(movie.ratings.length > 1){
+                movie.avgRating = movie.avgRatingMethod(movie.ratings);
+            } else {
+                movie.avgRating = movie.ratings[0].content
+            }
             movie.save(err => {
                 res.redirect("/")
             })
