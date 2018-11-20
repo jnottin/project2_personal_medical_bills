@@ -12,6 +12,7 @@ app.set('view engine', 'hbs')
 app.use(parser.urlencoded({ extended: true }));
 
 app.use('/', routes)
+//suprised ^^^ worked, thats cool
 
 // app.listen(3000, () => {
 // })

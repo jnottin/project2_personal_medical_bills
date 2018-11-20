@@ -1,5 +1,5 @@
 const Movie = require("../models/Movie.js");
-
+//cool you made a seed file
 Movie.find({}).remove(() => {
     let earInfection = Movie.create({
         title: "Creed",

@@ -39,6 +39,9 @@
             </div>
         </div>
     </section>
+    
+    {{!-- Some of this should be in partials, it would make it easier to read
+    and sepearate some of your concerns --}}
 
     <!-- MOVIE TRAILERS -->
     <section id="posts">
@@ -71,12 +74,14 @@
                                     <td>{{title}}</td>
                                     <td>{{director}}</td>
                                     <td>{{releaseDate}}</td>
-                                    {{#if ratings.length}}
-                                    {{#each ratings}}
+                                    {{!-- {{#if ratings.length}} --}}
+                                    {{!-- {{#each ratings}}
                                     <td>{{content}}</td>
-                                    {{/each}}
+                                    {{/each}} --}}
+                                    {{#if avgRating}}
+                                        <td>{{avgRating}}</td>
                                     {{else}}
-                                    <td>Not Rated</td>
+                                        <td>Not Rated</td>
                                     {{/if}}
                                     <td>
                                         <a href="movie/{{this.id}}" class="btn btn-secondary">
